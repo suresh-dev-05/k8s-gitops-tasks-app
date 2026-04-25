@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend-app
+  template:
+    metadata:
+      labels:
+        app: frontend-app
+    spec:
+      containers:
+        - name: frontend
+          image: learningsuresh/tasks-app-frontend:dev 
+          ports:
+            - containerPort: 3000
+          env:
+            - name: NODE_ENV
+              value: "dev"
