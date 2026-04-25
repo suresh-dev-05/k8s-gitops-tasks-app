@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: learningsuresh/tasks-app-backend:dev  
+          image: learningsuresh/tasks-app-backend:prod
           ports:
             - containerPort: 3000
           env:

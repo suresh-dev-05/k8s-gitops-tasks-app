@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: learningsuresh/tasks-app-frontend:dev 
+          image: learningsuresh/tasks-app-frontend:prod
           ports:
             - containerPort: 3000
           env:
