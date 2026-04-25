@@ -15,6 +15,7 @@ spec:
       containers:
         - name: backend
           image: learningsuresh/tasks-app-backend:prod
+          imagePullPolicy: Always
           ports:
             - containerPort: 3000
           env:
